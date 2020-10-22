@@ -1,7 +1,7 @@
 <?php
 //connection a la base de donnée
 try{
-    $bdd = new PDO('mysql:host=localhost;dbname=capital', 'devil', 'azia01');
+    $bdd = new PDO('mysql:host=localhost;dbname=votre_nom_de_base', 'votre_user', 'votre_pass');
     $bdd-> exec('SET NAMES "UTF8"');
 }catch(PDOException $e){
     echo 'erreur' . $e->getMessage();
